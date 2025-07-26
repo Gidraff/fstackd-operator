@@ -10,4 +10,14 @@ plugins:
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: fstackd-operator
 repo: github.com/Gidraff/fstackd-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: gidraff.com
+  group: cache
+  kind: Fstack
+  path: github.com/Gidraff/fstackd-operator/api/v1alpha1
+  version: v1alpha1
 version: "3"
